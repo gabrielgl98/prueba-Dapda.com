@@ -1,0 +1,164 @@
+/* en esta hoja de estilos se encontrara lo necesario para que el spinner funcine correctamente  */
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    /* height: 100%; */
+    margin: 0;
+    padding: 0;
+    background: Snow;
+}
+
+.loading_page{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.loader:nth-child(1){
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(50% - 100px);
+    border: 6px solid Snow;
+    border-bottom: 6px solid #D30208;
+    border-left: 6px solid #D30208;
+    text-align: center;
+    border-radius: 50%;
+    animation: goround 2s linear infinite;
+    -webkit-animation: goround 2s linear infinite;
+}
+
+.loader:nth-child(2){
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    top: calc(50% - 100px + 15px);
+    left: calc(50% - 100px + 15px);
+    border: 6px solid Snow;
+    border-bottom: 6px solid #F5EED5;
+    border-right: 6px solid #F5EED5;
+    text-align: center;
+    border-radius: 50%;
+    animation: minusgoround 2s linear infinite;
+    -webkit-animation: minusgoround 2s linear infinite;
+}
+
+.loader:nth-child(3){
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    top: calc(50% - 100px + 30px);
+    left: calc(50% - 100px + 30px);
+    border: 6px solid Snow;
+    border-top: 6px solid #015386;
+    border-right: 6px solid #015386;
+    text-align: center;
+    border-radius: 50%;
+    animation: goround 1s linear infinite;
+    -webkit-animation: goround 1s linear infinite;
+}
+
+.loader:nth-child(4){
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    top: calc(50% - 100px + 45px);
+    left: calc(50% - 100px + 45px);
+    border: 6px solid Snow;
+    border-top: 6px solid #E5C685;
+    border-left: 6px solid #E5C685;
+    text-align: center;
+    border-radius: 50%;
+    animation: minusgoround 1s linear infinite;
+    -webkit-animation: minusgoround 1s linear infinite;
+}
+
+.loader:nth-child(5){
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: calc(50% - 100px + 60px);
+    left: calc(50% - 100px + 60px);
+    border: 6px solid Snow;
+    border-bottom: 6px solid #0074B1;
+    border-left: 6px solid #0074B1;
+    text-align: center;
+    border-radius: 50%;
+    animation: goround 2s linear infinite;
+    -webkit-animation: goround 2s linear infinite;
+}
+
+.loader:nth-child(6){
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: calc(50% - 100px + 75px);
+    left: calc(50% - 100px + 75px);
+    border: 6px solid Snow;
+    border-bottom: 6px solid #D30208;
+    border-right: 6px solid #D30208;
+    text-align: center;
+    border-radius: 50%;
+    animation: minusgoround 1s linear infinite;
+    -webkit-animation: minusgoround 1s linear infinite;
+}
+
+.loader:nth-child(7){
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: calc(50% - 100px + 90px);
+    left: calc(50% - 100px + 90px);
+    border: 6px solid #E5C685;
+    text-align: center;
+    border-radius: 50%;
+    animation: goround 1s linear infinite;
+    -webkit-animation: goround 1s linear infinite;
+}
+
+@keyframes goround{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+@-webkit-keyframes goround{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes minusgoround{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+@-webkit-keyframes minusgoround{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}

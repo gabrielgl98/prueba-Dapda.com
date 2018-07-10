@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Solicita tu vehículo</title>
+
+    {{   render (controller('AppBundle:Default:header')) }}
+    <link href="{{asset('./css/spinner.css')}}" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+
+          <div class="row">
+            <div class="col-lg-3 com-md-3 col-xs-1 col-sm-1">
+
+            </div>
+            <div style="background-color:black" class=" landing col-lg-6 com-md-6 col-xs-10 col-sm-10">
+                <img src="{{asset('./imagenes/subopel.jpg')}}" style="padding-top:10px" width="100%"alt="">
+              <div  class="formulario">
+                    {{form_start(formulario, {'attr': {'novalidate': 'novalidate'}})}}
+                    <div class="col-lg-3 col-md-3 col-xs-6 col-sm-3 form-group ">
+                      {{form_row(formulario.nombre)}}
+                    </div>
+                      <div class="col-lg-3 col-md-3 col-xs-6 col-sm-3 form-group">
+                      {{form_row(formulario.apellidos)}}
+                    </div>
+                      <div class="col-lg-3 col-md-3 col-xs-6 col-sm-3 form-group">
+                      {{form_row(formulario.telefono)}}
+                    </div>
+                      <div class="col-lg-3 col-md-3 col-xs-6 col-sm-3 form-group">
+                      {{form_row(formulario.email)}}
+                    </div>
+                      <div class="col-lg-4 col-md-4 col-xs-6 col-sm-4 form-group">
+                      {{form_row(formulario.tipoVehiculo)}}
+                    </div>
+                      <div class="col-lg-4 col-md-4 col-xs-6 col-sm-4 form-group">
+                      {{form_row(formulario.vehiculo)}}
+                    </div>
+                      <div class="col-lg-4 col-md-4 col-xs-6 col-sm-4 form-group">
+                      {{form_row(formulario.preferenciaLlamada)}}
+                    </div>
+                      <div class="col-lg-3 col-md-2 col-xs-5 col-sm-3 form-group botonSolicitud">
+                      {{form_row(formulario.enviarSolicitud)}}
+                    </div>
+
+                    {{form_end(formulario)}}
+              </div>
+            </div>
+
+
+
+            <!-- <div class="container"> -->
+                <div class="loading_page" style="visibility: hidden">
+                    <div class="loader"></div>
+                    <div class="loader"></div>
+                    <div class="loader"></div>
+                    <div class="loader"></div>
+                    <div class="loader"></div>
+                    <div class="loader"></div>
+                    <div class="loader"></div>
+                    <div class="loader"></div>
+                </div>
+          </div>
+
+      <!-- </div> -->
+        </div>
+</div>
+
+    {{   render (controller('AppBundle:Default:footer')) }}
+    <style>
+    .botonSolicitud{
+        float:right;
+        padding-top:20px;
+    }
+      .landing{
+        margin-top:10px;
+        border-style: solid;
+        border-width: 8px;
+        border-color:#ECFF73;
+        padding: 20px;
+      }
+
+    </style>
+  </body>
+</html>
