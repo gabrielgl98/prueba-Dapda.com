@@ -3,7 +3,7 @@ Symfony 3.4 - php 5.6.31
 Para instalar crear base de datos y ejecutar entities
 
 php bin/console doctrine:database:create
-php bin/console doctrine:generate:entity
+php bin/console doctrine:schema:update --force
 
 Limpiar cache por si da errores extraños
 
